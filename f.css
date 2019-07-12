@@ -1,0 +1,8 @@
+@charset "utf-8";
+ul{list-style-type: none;float: right;margin-right: 80px}
+li{display: inline;margin: 0 20px 0 20px}
+nav{overflow: hidden;background-color:#38353C;color: white;direction: rtl}
+.header{height: 60px;background-color: white;flaot:right;direction: rtl;justify-content: center;overflow: hidden;display:inline}
+.header a{ padding-right: 40px;font-size: 35px}
+.header p .p1 {color: red}
+
