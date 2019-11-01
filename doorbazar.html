@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="custom.css">
+
+	
+
+	
+	
+</head>
+<body>
+<header>
+<div>
+<a class="logo-link" href="#"><img src="Untit-5.jpg" width="200" height="80" class="img-fluid" alt=""></a>
+
+<input type="text" class="search-bar" placeholder="نام برند و کالا را وارد کنید " >
+<button class="search-btn btn btn-dark"><i class="fa fa-search"></i></button>
+
+<button type="button" class="btn btn-outline-dark shop-btn"><span class="badge badge-pill badge-dark" style="font-size: 12px">0</span> <span class="shop-text">سبد خرید</span> <em class="fa fa-shopping-cart shop-icon" style="font-size: 23px"></em></button>
+<button type="button" id="btn-modal" data-toggle="modal" data-target="#myModal" class="btn btn-link bt-app1">اپلیکیشن دور بازار</button>
+
+<button class="btn btn-link bt-app2" id=tt>تولید کننده هستم</button>
+<button class="btn btn-link bt-app3" id="btn-modal2" data-target="myModal1" data-toggle="modal">ثبت نام -ورود</button>
+
+<script>
+
+$(document).ready(function(){
+  $("#btn-modal").click(function(){
+    $("#myModal").fadeIn();
+  });
+});
+
+</script>
+
+<script>
+$(document).ready(function(){
+  $("body").dblclick(function(){
+   $("#myModal").fadeOut();
+
+  });
+});
+
+
+</script>
+
+<script>
+
+$(document).ready(function(){
+  $("#btn-modal2").click(function(){
+    $("#myModal1").fadeIn();
+  });
+});
+
+</script>
+
+<script>
+$(document).ready(function(){
+$("body").dblclick(function(){
+$("#myModal1").fadeOut();
+
+});
+});
+
+
+</script>
+
+  
+</div>
+
+<div class="modal" id="myModal1" role="dialog">
+<div class="modal-dialog modal-dialog-centered">
+<div class="modal-content">
+
+
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<div class="modal " id="myModal" role="dialog">
+    <div class="modal-dialog modal-dialog-centered">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="float: right">
+          
+          <p>دریافت اپلیکیشن دور بازار</p>
+        </div>
+        <div class="modal-body">
+
+          <a href="#" ><img src="google-play.png"></a>
+          <a href="#" style="margin-left: 10px"><img  src="cafebazar.png"></a>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+
+
+
+<br>
+<div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item dropdown  " >
+<a class="nav-link  " href="#" id="navbardrop" > <i id="span-dop" class="fa fa-caret-down"></i>    مواد غذایی</a>
+ <ul class="dropdown-menu" id="dropdown" style="text-align: right ;background: #343A40">
+      <li> <a class="dropdown-item" href="#"> <i class=" fa fa-angle-left"></i>  لینک1 </a></li> 
+		
+		
+     <li> <a class="dropdown-item" href="#">لینک2 </a></li>  
+     <li> <a class="dropdown-item" href="#">لینک3 </a></li>  
+      </ul>
+	  
+	  <script>
+	  $(document).ready(function(){
+	  
+	  $(".navbar ul li").hover(function(){
+	  $(this).children("ul").stop(true).fadeToggle();
+	  });
+	  });
+	  
+	  
+	  </script>
+	  
+	  
+
+</li>
+
+
+
+<li class="nav-item dropdown ">
+<a class="nav-link  " href="#" id="navbardrop" > <i id="span-dop" class="fa fa-caret-down"></i>    مواد غذایی</a>
+ <ul class="dropdown-menu" id="dropdown" style="text-align: right ;background: #343A40">
+      <li> <a class="dropdown-item" href="#"> <i class=" fa fa-angle-left"></i>  لینک1 </a></li> 
+		
+		
+     <li> <a class="dropdown-item" href="#">لینک2 </a></li>  
+     <li> <a class="dropdown-item" href="#">لینک3 </a></li>  
+      </ul>
+</li>
+
+<li class="nav-item dropdown ">
+<a class="nav-link  " href="#" id="navbardrop" > <i id="span-dop" class="fa fa-caret-down"></i>    مواد غذایی</a>
+ <ul class="dropdown-menu" id="dropdown" style="text-align: right ;background: #343A40">
+      <li> <a class="dropdown-item" href="#"> <i class=" fa fa-angle-left"></i>  لینک1 </a></li> 
+		
+		
+     <li> <a class="dropdown-item" href="#">لینک2 </a></li>  
+     <li> <a class="dropdown-item" href="#">لینک3 </a></li>  
+      </ul>
+</li>
+
+<li class="nav-item dropdown ">
+<a class="nav-link  " href="#" id="navbardrop" > <i id="span-dop" class="fa fa-caret-down"></i>    مواد غذایی</a>
+ <ul class="dropdown-menu" id="dropdown" style="text-align: right ;background: #343A40">
+      <li> <a class="dropdown-item" href="#"> <i class=" fa fa-angle-left"></i>  لینک1 </a></li> 
+		
+		
+     <li> <a class="dropdown-item" href="#">لینک2 </a></li>  
+     <li> <a class="dropdown-item" href="#">لینک3 </a></li>  
+      </ul>
+</li>
+
+
+
+
+
+
+</ul>
+
+</nav>
+
+
+</div></header>
+
+
+
+
+
+
+<div class="container-fluid container-part1" >
+
+
+
+<div class="row" >
+<div class="col-10">
+<div id="carouselExampleIndicators" class="carousel slide  " data-ride="carousel" data-interval="1000">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active"><a href="#">
+      <img src="14.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item">
+	<a href="#">
+      <img src="12.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+    <div class="carousel-item"><a href="#">
+      <img src="13.jpg" class="d-block w-100" alt="..."></a>
+    </div>
+  </div>
+  <a class="carousel-control-prev carousel-control-prev1" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next carousel-control-next1" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div></div>
+
+<div class="col-2" >
+<div style="width: 230px;height: 400px;background: grey;margin-top: 25px;margin-left: -12px;border-radius: 10px">
+
+
+
+
+</div>
+
+<div style="width: 230px;height: 400px;background: grey;margin-top: 25px;margin-left: -12px;border-radius: 10px">
+
+
+
+
+</div>
+
+</div>
+
+
+</div>
+
+<div class="row">
+    <div class="col-12">
+<div class="carousel slide carousel2" id="carousel2" data-ride="carousel" data-interval="100000000" style="">
+    <div class="carousel-header " >
+        <div class="col-10"><h5>hgh</h5><hr/></div>
+        <div class="col-2" ><h5>برگزیده ها </h5><hr/></div>
+        
+    
+    
+    
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active"  >
+            <div class="row" >
+                <div class="col-1"></div>
+            <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                      </div></a>
+            </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                       </div></a>
+            </div>
+                    <div class="col-md clc" ><a  href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                        </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                        </div></a>
+            </div>
+                
+                <div class="col-1"></div>
+                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                 
+                
+            </div>
+        </div>
+        <div class="carousel-item"  >
+          <div class="row" >
+           <div class="col-1"></div>
+            <div class="col-md clc"  >
+                <a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                    </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+            </div></a>
+                      </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                       </div></a>
+            </div>
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                        </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                        </div></a>
+            </div>
+                
+                <div class="col-sm-1"></div>
+                
+            </div>
+        
+        </div>
+        
+    
+    </div>
+    
+    <a class="carousel-control-prev carousel-prev-2" data-slide="prev" href="#carousel2" role="button">
+    <i class="fas fa-angle-left ca-ic-pr" ></i>
+    <span class="sr-only">Prev</span>    
+    
+    </a>
+    <a class= "carousel-control-next carousel-next-2" data-slide="next" href="#carousel2" role="button">
+    <i class="fas fa-angle-right ca-ic-ne" aria-hidden="true"></i>
+        <span class="sr-only">Next</span>
+    </a>
+    
+    </div>
+        <br/>
+        
+    </div>
+    </div>
+    
+    
+    <div class="row brand"  >
+    
+        <div class="col-6">
+            <img class="img-fluid" src="1b.jpg">
+        </div>
+        
+        <div class="col-6">
+        <img class="img-fluid" src="1b.jpg" >
+        
+        </div>
+        
+        
+        
+    
+    
+    
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+<div class="carousel slide carousel2" id="carousel3" data-ride="carousel" data-interval="100000000" style="">
+    <div class="carousel-header " >
+        <div class="col-10"><h5>hgh</h5><hr/></div>
+        <div class="col-2" ><h5>برگزیده ها </h5><hr/></div>
+        
+    
+    
+    
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active"  >
+            <div class="row" >
+                <div class="col-1"></div>
+            <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                  </div></a>
+            </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                   </div></a>
+            </div>
+                    <div class="col-md clc" ><a  href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                    </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                    </div></a>
+            </div>
+                
+                <div class="col-1"></div>
+                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                 
+                
+            </div>
+        </div>
+        <div class="carousel-item"  >
+          <div class="row" >
+           <div class="col-1"></div>
+            <div class="col-md clc"  >
+                <a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+            </div></a>
+              </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                   </div></a>
+            </div>
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                    </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="c.jpg">
+                 </div>
+                  
+                  <div class="thumb-content">
+                     <h6> گوشی  موبایل  سامسونگ  مدل   <br/>  دو سیم کارتهglaxy note 1 </h6>
+                      <h4 class="text-danger">  2,224,000 تومان</h4>
+                  
+                  </div>
+                    </div></a>
+            </div>
+                
+                <div class="col-sm-1"></div>
+                
+            </div>
+        
+        </div>
+        
+    
+    </div>
+    <a class="carousel-control-prev carousel-prev-2" data-slide="prev" href="#carousel3" role="button"> <em class="fas fa-angle-left ca-ic-pr"></em> <span class="sr-only">Prev</span> </a> <a class="carousel-control-next carousel-next-2" data-slide="next" href="#carousel3" role="button"> <em class="fas fa-angle-right ca-ic-ne" aria-hidden="true"></em> <span class="sr-only">Next</span> </a></div>
+        <br/>
+        
+    </div>
+    </div>
+    
+    <div class="row">
+    <div class="col-12">
+<div class="carousel slide carousel2" id="carousel4" data-ride="carousel" data-interval="100000000" style="">
+    <div class="carousel-header " >
+        <div class="col-10"><h5>hgh</h5><hr/></div>
+        <div class="col-2" ><h5>تولید کننده برتر </h5><hr/></div>
+        
+    
+    
+    
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active"  >
+            <div class="row" >
+                <div class="col-1"></div>
+            <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1076.png">
+                 </div>
+                  
+                  
+                </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1078.png">
+                 </div>
+                  
+                 
+                  </div></a>
+            </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1079.png">
+                 </div>
+                  
+                  
+                   </div></a>
+            </div>
+                    <div class="col-md clc" ><a  href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1080.png">
+                 </div>
+                  
+                 
+                    </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1081.png">
+                 </div>
+                  
+                  
+                    </div></a>
+            </div>
+                
+                <div class="col-1"></div>
+                 
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+                 
+                
+            </div>
+        </div>
+        <div class="carousel-item"  >
+          <div class="row" >
+           <div class="col-1"></div>
+            <div class="col-md clc"  >
+                <a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1076.png">
+                 </div>
+                  
+                
+                </div></a>
+            </div>
+                
+                  <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1078.png">
+                 </div>
+                  
+                 
+            </div></a>
+              </div>
+                
+                   <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1079.png">
+                 </div>
+                  
+                
+                   </div></a>
+            </div>
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1080.png">
+                 </div>
+                  
+                
+                    </div></a>
+            </div>
+                
+                    <div class="col-md clc" ><a href="#">
+              <div class="thumb-wrapper">
+                 <div class="img-box">
+                    <img class="img-fluid " src="1081.png">
+                 </div>
+                  
+                  
+                        </div></a>
+            </div>
+                
+                <div class="col-sm-1"></div>
+                
+            </div>
+        
+        </div>
+        
+    
+    </div>
+    <a class="carousel-control-prev carousel-prev-2" data-slide="prev" href="#carousel4" role="button"> <em class="fas fa-angle-left ca-ic-pr"></em> <span class="sr-only">Prev</span> </a> <a class="carousel-control-next carousel-next-2" data-slide="next" href="#carousel4" role="button"> <em class="fas fa-angle-right ca-ic-ne" aria-hidden="true"></em> <span class="sr-only">Next</span> </a></div>
+        <br/>
+        
+    </div>
+    </div>
+    
+
+
+
+</div>
+
+<br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/><br/>
+<br/>
+
+
+
+<footer class="foot ml-auto">
+
+<div class="container-fluid part1" ><br/>
+<div class="row">
+<div class="col colcss">
+<a  href="#" class="col-link">
+<img class="col-img" src="Capture.JPG" />
+
+<p class="col-pa">تحویل فوری</p>
+</a>
+
+</div>
+<div class="col colcss">
+<a href="#" class="col-link">
+<img class="col-img" src="Capture.JPG" />
+
+<p class="col-pa">تحویل فوری</p>
+</a>
+</div>
+<div class="col colcss">
+<a  href="#" class="col-link">
+<img class="col-img" src="Capture.JPG" />
+
+<p class="col-pa">تحویل فوری</p>
+</a>
+</div>
+<div class="col colcss">
+<a href="#" class="col-link">
+<img class="col-img" src="Capture.JPG" />
+
+<p class="col-pa">تحویل فوری</p>
+</a>
+</div>
+
+<div class="col colcss">
+<a href="#" class="col-link">
+<img class="col-img" src="Capture.JPG" />
+
+<p class="col-pa">تحویل فوری</p>
+</a>
+</div>
+
+
+</div>
+
+<hr/>
+<div class="row">
+<div class="col">
+<h6>اطلاع رسانی از طریق خبرنامه </h6>
+<input class="new-bar"  type="text" placeholder="آدرس ایمیل خود را وارد کنید "  />
+<button class="btn btn-secondary btn-new">ارسال</button>
+
+<p style="margin-top:15px;">دور بازار در شبکه های اجتماعی</p>
+<a><i class="fab fa-facebook" style="font-size: 35px"></i></a>
+
+<a><i class="fab fa-instagram" style="font-size: 35px"></i></a>
+<a><i class="fab fa-telegram" style="font-size: 35px"></i></a>
+<a><i class="fab fa-whatsapp" style="font-size: 35px"></i></a>
+<a><i class="fab fa-twitter" style="font-size: 35px"></i></a>
+
+
+
+
+
+</div>
+
+<div class="col"><h6>راهنمای خرید از دور بازار</h6>
+<p>نحوه ثبت سفارش</p>
+<p>نحوه ارسال سفارش</p>
+<p>نحوه پرداخت وجه</p>
+<p>نحوه پرداخت </p>
+</div>
+
+<div class="col"><h6>راهنمای خرید از دور بازار</h6>
+<p>نحوه ثبت سفارش</p>
+<p>نحوه ارسال سفارش</p>
+<p>نحوه پرداخت وجه</p></div>
+
+<div class="col">
+<h6>راهنمای خرید از دور بازار</h6>
+<p>نحوه ثبت سفارش</p>
+<p>نحوه ارسال سفارش</p>
+<p>نحوه پرداخت وجه</p>
+
+</div>
+
+
+
+
+
+
+</div>
+
+<hr/>
+
+<div class="row" style="text-align: right;">
+
+<p style="text-align: right"> شماره تماس:0218889858<i style="font-size: 30px" class="fa fa-phone-square"></i> </p>
+
+
+</div>
+
+
+
+
+
+</div>
+<div class="container-fluid part2">
+<h3 class="footer-head "> بازار عمده اینترنتی دور بازار  کاهش اتلاف وقت،خرید سریع،به صرفه</h3>
+<p class="par">فروشگاه اینترنی دور بازار  فروشگاهی عمده فروشی است که تمامی لوازرم مورد نیاز کاسبان خرده فروش را در اسرع وقت فراهم کرده کمتر از یک روزه کاری تحویل می دهد این فروشگاه قابلیت فروش عمده به مشتریان غیر تجاری را نیز داراست.</p>
+
+
+
+</div>
+
+</footer>
+
+</body>
+</html>
